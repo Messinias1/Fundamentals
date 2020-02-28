@@ -10,19 +10,12 @@ namespace Fundamentals
     {
         static void Main(string[] args)
         {
-            Car car1 = new Car("Saab", "9-3", 12000);
-            //car1.make = "Saab";
-            //car1.model = "9-3";
-            //car1.price = 12000;
-            Console.WriteLine(car1.make);
+            Dog dog1 = new Dog("Caleb", "Husky", 5);
 
-            Car car2 = new Car("Volvo", "s60", 20000);
-            //car2.make = "Volvo";
-            //car2.model = "s60";
-            //car2.price = 20000;
-            car2.model = "XC-90";
-            Console.WriteLine(car2.make);
-            Console.WriteLine(car2.model);
+            Dog dog2 = new Dog("Heidi", "Husky", 13);
+
+            Console.WriteLine(dog1.name + " " + dog1.age);
+            Console.WriteLine(dog2.name + " " + dog2.age);
         }
     }
 }
