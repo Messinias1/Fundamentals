@@ -16,7 +16,14 @@ namespace Fundamentals
             book1.author = "JK Rowling";
             book1.pages = 400;
 
-            Console.WriteLine(book1.title);
+            Book book2 = new Book();
+            book2.title = "Lord of the Rings";
+            book2.author = "JRR Tolkien";
+            book2.pages = 700;
+
+            Console.WriteLine(book2.title);
+            if(book2.author == "JRR Tolkien")
+                Console.WriteLine("a really good book");
         }
     }
 }
