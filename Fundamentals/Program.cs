@@ -16,6 +16,7 @@ namespace Fundamentals
             book1.author = "JK Rowling";
             book1.pages = 400;
 
+            // new object
             Book book2 = new Book();
             book2.title = "Lord of the Rings";
             book2.author = "JRR Tolkien";
