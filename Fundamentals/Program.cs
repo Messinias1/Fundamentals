@@ -10,20 +10,19 @@ namespace Fundamentals
     {
         static void Main(string[] args)
         {
-            // book object/instance of the book class
-            Book book1 = new Book();
-            book1.title = "Harry Potter";
-            book1.author = "JK Rowling";
-            book1.pages = 400;
+            Car car1 = new Car("Saab", "9-3", 12000);
+            //car1.make = "Saab";
+            //car1.model = "9-3";
+            //car1.price = 12000;
+            Console.WriteLine(car1.make);
 
-            Book book2 = new Book();
-            book2.title = "Lord of the Rings";
-            book2.author = "JRR Tolkien";
-            book2.pages = 700;
-
-            Console.WriteLine(book2.title);
-            if(book2.author == "JRR Tolkien")
-                Console.WriteLine("a really good book");
+            Car car2 = new Car("Volvo", "s60", 20000);
+            //car2.make = "Volvo";
+            //car2.model = "s60";
+            //car2.price = 20000;
+            car2.model = "XC-90";
+            Console.WriteLine(car2.make);
+            Console.WriteLine(car2.model);
         }
     }
 }
