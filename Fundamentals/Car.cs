@@ -12,7 +12,7 @@ namespace Fundamentals
         public string make;
         public int price;
 
-        // constructor
+        // constructor, a special method that gets called when you create an object
         public Car(string aMake, string aModel, int aPrice)
         {
             this.model = aModel;
