@@ -23,11 +23,14 @@ namespace Fundamentals
             Console.WriteLine(car2.make);
             Console.WriteLine(car2.model);
 
+            Console.WriteLine(car1.IsSwedish());
+
             Cat cat1 = new Cat("Yellow", "orange", 16);
             Console.WriteLine(cat1.age);
 
             Cat cat2 = new Cat();
             cat2.name = "Cluck";
+            Console.WriteLine(cat1.IsOld());
         }
     }
 }

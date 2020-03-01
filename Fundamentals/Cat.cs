@@ -22,5 +22,14 @@ namespace Fundamentals
             this.color = aColor;
             this.age = aAge;
         }
+
+        public bool IsOld()
+        {
+            if(age >= 10)
+            {
+                return true;
+            }
+            return false;
+        }
     }
 }
