@@ -23,6 +23,7 @@ namespace Fundamentals
             Console.WriteLine(car2.make);
             Console.WriteLine(car2.model);
 
+            // calling object method
             Console.WriteLine(car1.IsSwedish());
 
             Cat cat1 = new Cat("Yellow", "orange", 16);
