@@ -13,9 +13,9 @@ namespace Fundamentals
             Song comeAsYouAre = new Song("Come As You Are", "Nirvana", 200);
             Song smellsLikeTeenSpirit = new Song("Smells Like Teen Spirit", "Nirvana", 250);
 
-            // object method
+            // object method call
             Console.WriteLine(comeAsYouAre.getSongCount());
-            // static method
+            // static method call
             Console.WriteLine(Song.songCount);
         }
     }
