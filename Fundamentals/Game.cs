@@ -17,7 +17,7 @@ namespace Fundamentals
             developer = aDeveloper;
             Rating = aRating;
         }
-        // getters and setter
+        // getters and setters
         public string Title { get; set; }
         public string Rating
         {
