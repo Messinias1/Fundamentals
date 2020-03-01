@@ -10,11 +10,13 @@ namespace Fundamentals
     {
         static void Main(string[] args)
         {
-            Game game1 = new Game("Skyrim", "Bethesda", "M");
-            Game game2 = new Game("Fallout 3", "Bethesda", "M");
+            Song comeAsYouAre = new Song("Come As You Are", "Nirvana", 200);
+            Song smellsLikeTeenSpirit = new Song("Smells Like Teen Spirit", "Nirvana", 250);
 
-            Console.WriteLine(game1.Rating);
-            Console.WriteLine(game2.Title);
+            // object method
+            Console.WriteLine(comeAsYouAre.getSongCount());
+            // static method
+            Console.WriteLine(Song.songCount);
         }
     }
 }
