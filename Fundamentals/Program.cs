@@ -23,6 +23,12 @@ namespace Fundamentals
             car2.model = "XC-90";
             Console.WriteLine(car2.make);
             Console.WriteLine(car2.model);
+
+            Cat cat1 = new Cat();
+            cat1.name = "Yellow";
+            cat1.color = "Orange";
+            cat1.age = 16;
+            Console.WriteLine(cat1.age);
         }
     }
 }
