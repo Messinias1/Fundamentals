@@ -10,21 +10,22 @@ namespace Fundamentals
     {
         static void Main(string[] args)
         {
-            int[,] numberGrid = { {1, 2 }, {3, 4 }, {5, 6 } };
-
-            int[,] myArray = new int[2, 3];
-            myArray[0, 0] = 5;
-            Console.WriteLine(myArray[0, 0]);
-
-            int uBound0 = numberGrid.GetUpperBound(0);
-            int uBound1 = numberGrid.GetUpperBound(1);
-            for (int i = 0; i <= uBound0; i++)
+            try
             {
-                for (int j = 0; j <= uBound1; j++)
-                {
-                    int res = numberGrid[i, j];
-                    Console.WriteLine(res);
-                }
+                Console.WriteLine("Enter a number: ");
+                int num1 = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Enter another number: ");
+                int num2 = Convert.ToInt32(Console.ReadLine());
+
+                Console.WriteLine(num1 / num2);
+            }
+            catch (DivideByZeroException e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            catch (FormatException e)
+            {
+                Console.WriteLine(e.Message + " You did not enter a number");
             }
         }
     }
