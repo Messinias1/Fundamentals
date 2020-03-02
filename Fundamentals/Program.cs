@@ -19,6 +19,7 @@ namespace Fundamentals
 
                 Console.WriteLine(num1 / num2);
             }
+            // SETTING SPECIFIC CATCHES FOR A DIFFERENT EXCEPTION SCENARIO
             catch (DivideByZeroException e)
             {
                 Console.WriteLine(e.Message);
